@@ -1,0 +1,51 @@
+<?php
+$owner_email = "vz@eurosigma.ru";
+$mOK = true;
+$sMess = "";
+$messageBody = "";
+$aP = $_REQUEST[p];
+ print_r( $aP);
+
+$mf_mail = $aP["email"];
+$subject = 'Сообщение с сайта '.$_SERVER['SERVER_NAME'];
+
+$aPos = array("Имя","Телефон","Сообщение");  
+foreach ( $aPos as $i => $v) {
+	$sIn = "p$i"; $sVal = $aP[$sIn];
+	$messageBody .= "<p><b>$v</b>: $sVal</p>"."\n";
+	}
+   
+	if ( $aP['p0'] ) { 
+      if ( !check_name($aP['p0'] ) ) { $mOK = false; $sE['p0'] = "Ошибка в имени";}
+   }  
+  else {$mOK = false; $sE['p0'] = "Укажите имя";}
+  
+  
+  if ( $aP['p1']  ) { 
+             if ( !check_tel($aP['p1'] ) ) { $mOK = false; $sE['p1'] = "Ошибка в телефоне";}
+    }
+  else {$mOK = false; $sE['p1'] = "Укажите телефон";}
+  
+
+    if ( $aP['email']  ) { 
+      if ( !check_email($aP['email'] ) ) { $mOK = false; $sE['email'] = "Неправильный email";}
+    }
+   else {$mOK = false; $sE['email'] = "Укажите email";}
+
+      if ( $aP['p2'] != "" ) { }
+  else {$mOK = false; $sE['p2'] = "Напишите сообщение";}
+  
+  if ( $mOK ) { 
+	  
+    if(crcl_mail($owner_email,$mf_mail,$subject,$messageBody))
+      $sMess = "<h2>Заявка отправлена</h2>";
+    else $sMess = "ОШИБКА";
+    }
+  else  $sMess = "ОШИБКА";    
+  
+  
+?>
+
+
+<h2>Заявка отправлена</h2>
+<p>Мы свяжемся с Вами в ближайшее время</p>

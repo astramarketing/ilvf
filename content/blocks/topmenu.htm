@@ -1,0 +1,18 @@
+ <?php 
+ if (CRCL_FUNC_NAME == 'index' ) $sActive1 = "active";
+ if (CRCL_FUNC_NAME == 'about' ) $sActive2 = "active";
+ if (CRCL_FUNC_NAME == 'inf' or CRCL_FUNC_NAME == 'istr') $sActive3 = "active";
+ if (CRCL_FUNC_NAME == 'blog' ) $sActive4 = "active";
+  if (CRCL_FUNC_NAME == 'contacts' ) $sActive5 = "active";
+ ?>
+ 
+ 
+            <ul class="nav sf-menu clearfix">
+                <li class="<?php echo $sActive1; ?>"><a href="?">главная</a></li>
+                <li class="<?php echo $sActive2; ?>"><a href="?an=about">Об авторе</a></li>
+                <li class=" <?php echo $sActive3; ?>" ><a href="?an=istr">истребители</a></span>
+  
+                </li>
+                <li class="<?php echo $sActive4; ?>"><a href="?an=blog">факты</a></li>
+                <li class="indent <?php echo $sActive5; ?>"><a href="?an=contacts">контакты</a></li>
+            </ul>

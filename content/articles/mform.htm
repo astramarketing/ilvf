@@ -1,0 +1,73 @@
+<?php
+//$owner_email = "info@cosyma.pro";
+$owner_email = "vz@eurosigma.ru";
+
+$bOK = true;
+$sMess = "";
+$messageBody = "";
+
+$subject = 'Сообщение с сайта '.$_SERVER['SERVER_NAME'];
+$aPos = array('0' => "Имя",'1' => "Телефон",'email' => 'E-mail', '2' => "Сообщение");
+
+$aP = $_REQUEST['p'];
+$mf_mail = trim(htmlspecialchars($aP['email']));
+$mf_name = trim(htmlspecialchars($aP['0']));
+$mf_tel = trim(htmlspecialchars($aP['1']));
+$mf_message = trim(htmlspecialchars($aP['2']));
+
+
+if ( isset($_REQUEST['mfout']) )  {
+	if ( $aP['0'] == '' ) { $bOK = false; $sMess .= "<p>Не указано имя</p>"; }
+	if ( $aP['email'] == '' ) { $bOK = false; $sMess .= "<p>Не указан e-mail</p>"; }
+	if ( $aP['2'] == '' ) { $bOK = false; $sMess .= "<p>Нет текста сообщения</p>"; }
+	
+	foreach ( $aPos as $i => $v) {
+		$sVal = $aP[$i];
+		$messageBody .= "<p><b>$v</b>: $sVal</p>"."\n";
+	}
+  
+  
+  
+if ( $bOK ) {  
+	$headers = "From: $mf_mail\r\n"."Reply-To: $mf_mail\r\n"."MIME-Version: 1.0\r\n"."Content-Type: text/html; charset=UTF-8; format=flowed;";
+    if(mail($owner_email, $subject, $messageBody, $headers))
+      echo "<div class=\"alert alert-success\" role=alert><h2>Сообщение отправлено</h2></div>";
+    else  echo "<div class=\"alert alert-warning\" role=alert><h2>ОШИБКА при передаче</h2></div>";
+    }
+else  echo "<div class=\"alert alert-warning\" role=alert><p>ОШИБКА</p>$sMess</div>";   
+ }
+?>
+
+<h1>Форма обратной связи</h1>
+
+<form role="form" action="#" method="post">
+	<input type="hidden" name="mfout">
+							<div class="form-group">
+								<label for="n1">Имя<sup>*</sup></label>
+								<input type="text" class="form-control" name="p[0]" id="n1" value="<?php echo $mf_name; ?>">
+							</div>
+							<div class="form-group">
+								<label for="n2">E-mail<sup>*</sup></label>
+								<input type="email" class="form-control" name="p[email]" id="n2" value="<?php echo $mf_mail; ?>">
+							</div>
+							<div class="form-group">
+								<label for="n3">Телефон</label>
+								<input type="text" class="form-control" name="p[1]" id="n3" value="<?php echo $mf_tel; ?>">
+							</div>							
+
+  <label for="">Сообщение<sup>*</sup></label>
+	<textarea class="form-control" name="p[2]"><?php echo $mf_message; ?></textarea>
+	
+ 
+
+  <br />
+  <p><sup>*</sup> - поля обязательные для заполнения</p>
+  
+     <button class="btn btn-primary" style="color:#fff;">отправить</button>
+</form>
+
+
+<br clear=all />
+			
+			
+          
