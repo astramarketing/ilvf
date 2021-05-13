@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 <title><?php crcl_parameter('title');?></title>
-<meta charset="utf-8">    
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
@@ -13,6 +13,9 @@
 <link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="css/camera.css">
 <link rel="stylesheet" href="fonts/font-awesome.css">
+<link rel="stylesheet" href="fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100">
+<link rel="stylesheet" href="fonts.googleapis.com/css?family=Roboto:400,300,500,700,900">
+
 <!--JS-->
 <script src="js/jquery.js"></script>
 <script src="js/jquery-migrate-1.2.1.min.js"></script>
@@ -76,17 +79,17 @@
 					onTouch: true
 				}
 			});
-		});  	 				
+		});
       });
 </script>
 <!--[if (gt IE 9)|!(IE)]><!-->
 <script src="js/wow/wow.js"></script>
 <script src="js/wow/device.min.js"></script>
 <script>
-    $(document).ready(function () {       
+    $(document).ready(function () {
       if ($('html').hasClass('desktop')) {
         new WOW().init();
-      }   
+      }
     });
 </script>
 <!--<![endif]-->
@@ -104,14 +107,14 @@
 </head>
 <body>
 <!--header-->
-<header class="indent">  
-    <div class="container"> 
+<header class="indent">
+    <div class="container">
         <nav class="navbar navbar-default navbar-static-top tm_navbar clearfix" role="navigation">
         	<?php crcl_block('topmenu');?>
 
         </nav>
 		<?php crcl_block('head');?>
-    
+
     </div>
 </header>
 <div class="slider">
@@ -120,8 +123,8 @@
     <?php crcl_block('slider');?>
     </div>
 </div>
-<div class="global"> 
-<!--content-->  
+<div class="global">
+<!--content-->
 <div class="thumb-box1">
 <?php crcl_block('vitrina1');?>
 
@@ -132,7 +135,7 @@
 <div class="thumb-box3">
     <div class="container">
     <?php crcl_block('vitrina3');?>
-       
+
     </div>
 </div>
 </div>
