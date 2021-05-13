@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<title></title>
+<meta charset="utf-8">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+<!--CSS-->
+<link rel="stylesheet" href="css/bootstrap.css" >
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/camera.css">
+<link rel="stylesheet" href="fonts/font-awesome.css">
+<!--JS-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/jquery.equalheights.js"></script>
+<script src="js/camera.js"></script>
+<!--[if (gt IE 9)|!(IE)]><!-->
+      <script src="js/jquery.mobile.customized.min.js"></script>
+<!--<![endif]-->
+<script src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script>
+    $(document).ready(function(){
+        jQuery('.camera_wrap').camera();
+    });
+</script>
+<script>
+    $(window).load(function() {
+        $(function() {
+            $('#foo1').carouFredSel({
+				auto: false,
+				responsive: true,
+				width: '100%',
+				scroll: 1,
+                prev: '#prev1',
+				next: '#next1',
+				items: {
+					height: 'auto',
+					width:290,
+					visible: {
+						min: 1,
+						max: 5
+					}
+				},
+				mousewheel: true,
+				swipe: {
+					onMouse: true,
+					onTouch: true
+				}
+			});
+            $('#foo2').carouFredSel({
+				auto: false,
+				responsive: true,
+				width: '100%',
+				scroll: 1,
+                prev: '#prev2',
+				next: '#next2',
+				items: {
+					height: 'auto',
+					width:300,
+					visible: {
+						min: 1,
+						max: 2
+					}
+				},
+				mousewheel: true,
+				swipe: {
+					onMouse: true,
+					onTouch: true
+				}
+			});
+		});  	 				
+      });
+</script>
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="js/wow/wow.js"></script>
+<script src="js/wow/device.min.js"></script>
+<script>
+    $(document).ready(function () {       
+      if ($('html').hasClass('desktop')) {
+        new WOW().init();
+      }   
+    });
+</script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
+    <div id="ie6-alert" style="width: 100%; text-align:center;">
+    <img src="http://beatie6.frontcube.com/images/ie6.jpg" alt="Upgrade IE 6" width="640" height="344" border="0" usemap="#Map" longdesc="http://die6.frontcube.com" />
+      <map name="Map" id="Map"><area shape="rect" coords="496,201,604,329" href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank" alt="Download Interent Explorer" /><area shape="rect" coords="380,201,488,329" href="http://www.apple.com/safari/download/" target="_blank" alt="Download Apple Safari" /><area shape="rect" coords="268,202,376,330" href="http://www.opera.com/download/" target="_blank" alt="Download Opera" /><area shape="rect" coords="155,202,263,330" href="http://www.mozilla.com/" target="_blank" alt="Download Firefox" />
+        <area shape="rect" coords="35,201,143,329" href="http://www.google.com/chrome" target="_blank" alt="Download Google Chrome" />
+      </map>
+  </div>
+  <![endif]-->
+</head>
+<body>
+<!--header-->
+<header class="indent">  
+    <div class="container"> 
+        <nav class="navbar navbar-default navbar-static-top tm_navbar clearfix" role="navigation">
+        	  
+ 
+            <ul class="nav sf-menu clearfix">
+                <li class="active"><a href="index-.html">главная</a></li>
+                <li class=""><a href="index-an=about.html">Об авторе</a></li>
+                <li class=" " ><a href="index-an=istr.html">истребители</a></span>
+  
+                </li>
+                <li class=""><a href="index-an=blog.html">факты</a></li>
+                <li class="indent "><a href="index-an=contacts.html">контакты</a></li>
+            </ul>
+        </nav>
+		    <div style="color: #1e2424;
+font: bold 60px/60px 'Roboto Slab';
+letter-spacing: 3px;">Истребители Люфтваффе<br /> восточный фронт
+</div>
+<p style="font-size: 30px;
+font-family: Helvetica, Arial, sans-serif;
+margin-top:20px;
+text-transform: uppercase;
+color: #db9f3c;">Фильм Дмитрия Захарова
+</p>    
+    </div>
+</header>
+<div class="slider">
+    <em></em>
+    <div class="camera_wrap">
+    <div data-src="img/pic1.png" style:background:blue;opacity:0.5;>
+	<div class="camera-caption fadeIn">
+		<p class="title">1941 год. Советская авиация потерпела</p>
+		<p class="description">Сокрушительное <br>поражение!</p>
+	</div>
+</div>
+
+<div data-src="img/pic2.png">
+	<div class="camera-caption fadeIn">
+		<p class="title"></p>
+		<p class="description">Что же <br>произошло?</p>
+	</div>
+</div>
+
+ <div data-src="img/pic3.png">
+	 <div class="camera-caption fadeIn">
+		 <p class="title">Зачем нам сегодня</p>
+		 <p class="description">помнить об этом?</p></div></div>
+      </div>
+</div>
+<div class="global"> 
+<!--content-->  
+<div class="thumb-box1">
+    <div class="box1">
+        <figure><img src="img/bg1.jpg" alt=""></figure>
+    </div>
+    <div class="box2">
+        <figure><img src="img/bg2.jpg" alt=""></figure>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 wow fadeInUp">
+                <p class="title" >В военном деле<br/>ничто не  <br>возникает из ниоткуда</p>
+                <a href="index-an=blog.html" class="btn-default btn1">важные факты <i></i></a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 wow fadeInUp" data-wow-delay="0.2s">
+                <p class="title2" style=" text-shadow: 2px 2px #000;">Истребители <br>второй <br> мировой</p>
+                <a href="index-an=istr.html" class="btn-default btn2"><span class="fa fa-group"></span>перейти <i></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="thumb-box2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <h2>О фильме</h2>
+                <div class="box">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 wow fadeInUp">
+                            <p>В фильме приводится история создания Люфтваффе. Описываются характеристики истребителей, система подготовки пилотов,
+                            тактика ведения воздушного боя на вертикале.
+                            </p><p>
+                             Это позволило в течение четырех лет обеспечивать немецкой авиации превосходство
+                            в воздухе на восточном фронте.                        
+                            </p>
+                            <a href="index-an=about.html" class="btn-default btn3">подробнее</a>
+	                       <br /> <br /> <br />
+	                            <p class="title2">В поединке профессионалов побеждает тот, <br />кто лучше выучен и лучше вооружен.</p>
+	                     
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.2s">
+                            <ul class="list1-1">
+                                <li><span><a href="#">Асы первой мировой</a></span></li>
+                                <li><span><a href="#">Друг Германии</a></span></li>
+                                <li><span><a href="#">Возрождение Люфтваффе</a></span></li>
+                                <li><span><a href="#">Испания. Проверка боем</a></span></li>
+                                <li><span><a href="#">Эмиль</a></span></li>
+                                 <li><span><a href="#">Фридрих и Густав</a></span></li>
+                                 <li><span><a href="#">A,B,C Schule</a></span></li>
+                                   <li><span><a href="#">Начало Катастрофы</a></span></li>
+                                 <li><span><a href="#">Вторжение</a></span></li>
+                                 <li><span><a href="#">Имена и геральдика</a></span></li>
+                                 <li><span><a href="#">Цвета зверя</a></span></li>
+                                 <li><span><a href="#">Арифметика войны</a></span></li>
+                                 <li><span><a href="#">Правила учета</a></span></li>
+                                 <li><span><a href="#">Гробы на хвостах</a></span></li>
+                                 <li><span><a href="#">Напарник Густава</a></span></li>
+								 <li><span><a href="#">Плюс на минус</a></span></li>
+								 <li><span><a href="#">Как это было?</a></span></li>
+								 <li><span><a href="#">Так победили</a></span></li>
+								 <li><span><a href="#">Ловушка для Люфтваффе</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+<!--				
+                <div class="box2">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 wow fadeInUp">
+                            <div class="list_carousel2 responsive clearfix">
+                                <ul id="foo2">
+                                    <li>
+                                        <p class="title">авг/<span>1914</span></p>
+                                        <p><strong>Убит первый летчик.</strong><br>12 августа 1914 года револьверной пулей франзуского пилота был убит немецкий летчик.</p>
+                                    </li>
+                                    <li>
+                                        <p class="title">сен/<span>1939</span></p>
+                                        <p><strong>Начало войны</strong><br>1 сентября 1939 Началась Вторая Мировая Война. Летчик Бруно Тили сбросил первую бомбу</p>
+                                    </li>
+                                    <li>
+                                        <p class="title">июн/<span>1941</span></p>
+                                        <p><strong>Нападение на СССР</strong><br>22 июня 1941 года фашисткая Германия напала на СССР. </p>
+                                    </li>
+
+                                </ul>
+                                <div class="list_btn2">
+                                    <a id="prev2" class="prev2" href="#"></a>
+                                    <a id="next2" class="next2" href="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 box3 wow fadeInUp" data-wow-delay="0.2s">
+                            <p class="title2">В поединке профессионалов побеждает тот, <br />кто лучше выучен и лучше вооружен.</p>
+                        </div>
+                    </div>
+                </div>
+-->				
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 banner-box wow fadeIn" data-wow-delay="0.3s">
+           
+			<img src="img/ilvf.png" width="500" height="375" >	
+				 <p>
+                <a href="http://youtu.be/_PMDEIGfmuA" class="btn-default btn4" target=_blank>Просмотр <i></i></a></p>
+            </div>
+        </div>
+    </div></div>
+<div class="thumb-box3">
+    <div class="container">
+            <h2 class="wow fadeIn">Кадры из фильма:</h2>
+        <div class="list_carousel1 responsive clearfix wow fadeInUp" data-wow-delay="0.2s">
+            <ul id="foo1">
+                <li>
+                    <figure><i><span>Асы<br>Первой мировой</span></i><img src="content/images/s1.png" alt=""></figure>
+                </li>
+                <li>
+                    <figure><i><span>Испания</span><strong>проверка боем</strong></i><img src="content/images/s2.png" alt=""></figure>
+                </li>
+                <li>
+                    <figure><i><strong>Начало<br>катастрофы</strong></i><img src="content/images/s3.png" alt=""></figure>
+                </li>
+                <li>
+                    <figure><i><span>A,B,C<br> SCHULE</span></i><img src="content/images/s4.png" alt=""></figure>
+                </li>
+                <li>
+                    <figure><i><span>Правила<br>учета</span></i><img src="content/images/s5.png" alt=""></figure>
+                </li>
+                <li>
+                    <figure><i><strong>Имена и<br>геральдика</strong></i><img src="content/images/s6.png" alt=""></figure>
+                </li>
+            </ul>
+            <div class="list_btn1">
+                <a id="prev1" class="prev2" href="#"></a>
+                <a id="next1" class="next2" href="#"></a>
+            </div>
+             </div>       
+    </div>
+</div>
+</div>
+<!--footer-->
+<div class="container">
+<footer>
+
+    <p align=left class="wow fadeInUp" data-wow-delay="0.2s">&copy; <em id="copyright-year"></em> <span>|</span> <a href="index-an=about.html">Дмитрий Захаров</a>
+	</p>
+<div style="text-align:right;">поддержка сайта <a  href="http://www.astramarketing.ru" target="_blank">astramarketing.ru</a></div>	 
+</footer>
+</div>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/tm-scripts.js"></script>
+</body>
+</html>
+

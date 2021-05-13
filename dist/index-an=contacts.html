@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<meta charset="utf-8">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<meta name="description" content="Your description">
+<meta name="keywords" content="Your keywords">
+<meta name="author" content="Your name">
+<!--CSS-->
+<link rel="stylesheet" href="css/bootstrap.css" >
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/contact-form.css">
+<link rel="stylesheet" href="fonts/font-awesome.css">
+<!--JS-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/jquery.equalheights.js"></script> 
+<script src="js/TMForm.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
+    <div id="ie6-alert" style="width: 100%; text-align:center;">
+    <img src="http://beatie6.frontcube.com/images/ie6.jpg" alt="Upgrade IE 6" width="640" height="344" border="0" usemap="#Map" longdesc="http://die6.frontcube.com" />
+      <map name="Map" id="Map"><area shape="rect" coords="496,201,604,329" href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank" alt="Download Interent Explorer" /><area shape="rect" coords="380,201,488,329" href="http://www.apple.com/safari/download/" target="_blank" alt="Download Apple Safari" /><area shape="rect" coords="268,202,376,330" href="http://www.opera.com/download/" target="_blank" alt="Download Opera" /><area shape="rect" coords="155,202,263,330" href="http://www.mozilla.com/" target="_blank" alt="Download Firefox" />
+        <area shape="rect" coords="35,201,143,329" href="http://www.google.com/chrome" target="_blank" alt="Download Google Chrome" />
+      </map>
+  </div>
+  <![endif]-->
+</head>
+<body>
+<!--header-->
+<header class="indent">  
+    <div class="container"> 
+        <nav class="navbar navbar-default navbar-static-top tm_navbar clearfix" role="navigation">
+  
+ 
+            <ul class="nav sf-menu clearfix">
+                <li class=""><a href="index-.html">главная</a></li>
+                <li class=""><a href="index-an=about.html">Об авторе</a></li>
+                <li class=" " ><a href="index-an=istr.html">истребители</a></span>
+  
+                </li>
+                <li class=""><a href="index-an=blog.html">факты</a></li>
+                <li class="indent active"><a href="index-an=contacts.html">контакты</a></li>
+            </ul>        </nav>
+       	    <div style="color: #1e2424;
+font: bold 60px/60px 'Roboto Slab';
+letter-spacing: 3px;">Истребители Люфтваффе<br /> восточный фронт
+</div>
+<p style="font-size: 30px;
+font-family: Helvetica, Arial, sans-serif;
+margin-top:20px;
+text-transform: uppercase;
+color: #db9f3c;">Фильм Дмитрия Захарова
+</p>    </div>
+</header>
+<div class="global indent">
+    <em></em>  
+    
+
+    <div class="contact-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-5">
+  <figure><img src="content/images/zaharov2.jpg" alt=""></figure>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-7">
+                    <h2>Обратная связь</h2>
+                    <form id="contact-form">
+                      <div class="contact-form-loader"></div>
+                      <fieldset>
+                        <label class="name form-div-1">
+                          <input type="text" name="name" placeholder="Имя:" value="" data-constraints="@Required @JustLetters"  />
+                          <span class="empty-message">*Это поле надо заполнить.</span>
+                          <span class="error-message">*Ошибка в имени.</span>
+                        </label>
+                        <label class="email form-div-2">
+                          <input type="text" name="email" placeholder="E-mail:" value="" data-constraints="@Required @Email" />
+                          <span class="empty-message">*Это поле надо заполнить.</span>
+                          <span class="error-message">*Ошибка в email.</span>
+                        </label>
+                        <label class="phone form-div-3">
+                          <input type="text" name="phone" placeholder="Телефон:" value="" data-constraints="@JustNumbers" />
+                          <span class="empty-message">*Это поле надо заполнить.</span>
+                          <span class="error-message">*Ошибка в телефоне.</span>
+                        </label>
+                        <label class="message form-div-4">
+                          <textarea name="message" placeholder="Сообщение:" data-constraints='@Required @Length(min=5,max=999999)'></textarea>
+                          <span class="empty-message">*Это поле надо заполнить.</span>
+                          <span class="error-message">*Сообщение слишком коротко.</span>
+                        </label>
+                        <!-- <label class="recaptcha"><span class="empty-message">*This field is required.</span></label> -->
+                        <div>
+                          <a href="#" data-type="submit" class="btn-default btn5">отправить</a>
+                        </div>
+                      </fieldset> 
+                      <div class="modal fade response-message">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                              <h4 class="modal-title">Modal title</h4>
+                            </div>
+                            <div class="modal-body">
+                              You message has been sent! We will be in touch soon.
+                            </div>      
+                          </div>
+                        </div>
+                      </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div></div>
+<!--footer-->
+<div class="container">
+<footer>
+
+    <p align=left class="wow fadeInUp" data-wow-delay="0.2s">&copy; <em id="copyright-year"></em> <span>|</span> <a href="index-an=about.html">Дмитрий Захаров</a>
+	</p>
+<div style="text-align:right;">поддержка сайта <a  href="http://www.astramarketing.ru" target="_blank">astramarketing.ru</a></div>	 
+</footer>
+</div>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/tm-scripts.js"></script>
+</body>
+</html>
+
+
+
+
