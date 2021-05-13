@@ -13,8 +13,8 @@
 <link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="css/camera.css">
 <link rel="stylesheet" href="fonts/font-awesome.css">
-<link rel="stylesheet" href="fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100">
-<link rel="stylesheet" href="fonts.googleapis.com/css?family=Roboto:400,300,500,700,900">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900">
 
 <!--JS-->
 <script src="js/jquery.js"></script>
