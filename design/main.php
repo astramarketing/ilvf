@@ -14,7 +14,9 @@
 <link rel="stylesheet" href="css/camera.css">
 <link rel="stylesheet" href="fonts/font-awesome.css">
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100">
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900">
+
+ <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 <!--JS-->
 <script src="js/jquery.js"></script>
